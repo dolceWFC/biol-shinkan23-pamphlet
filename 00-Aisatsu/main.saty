@@ -4,6 +4,7 @@
 @require: itemize
 @require: easytable/easytable
 @require: latexcmds/latexcmds
+@require: figbox/figbox
 
 open EasyTableAlias
 
