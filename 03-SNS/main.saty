@@ -12,12 +12,37 @@ open EnumitemAlias
 
 in
 document (|
-  title = {1年の流れ};
-  num-chapter = 4;
-  start-page = 4;
+  title = {各種新歓用SNSのあれこれ};
+  num-chapter = 3;
+  start-page = 3;
 |) '<
-  +p {
-    めちゃめちゃ楽しいイベント！苦しい苦しいテスト期間など、記憶を頼りに1年間の流れを紹介したいと思います！筑波大生の生活は6モジュール制の学期が変わるたびにガラッと変わる印象があるので、それぞれのモジュールに沿って紹介していきまーす。
-  }
+  +section{生物学類新歓LINEオープンチャットの登録} <
+    +p {
+      2023年度生物学類新歓委員は、新歓用LINEオープンチャットを運用しています。新歓イベントについての詳細や新歓委員からのお知らせをお伝えする予定です。
+      \linebreak;
+    }
+    +fig-center(vconcat ?:align-center[
+      include-image 100pt `lineqr.jpg`;
+      textbox-with-width 100pt {参加コード:tsukuba \linebreak;};
+    ]);
+    +p {
+      このLINEオープンチャットは全員必ず参加してください！！LINEアカウントを持っていないという方はメールで個別に対応いたしますので、お手数ですが下記新歓用メールアドレスまでご連絡ください。
+      \linebreak;
+    }
+    +p {
+      2023年度新歓用メールアドレス:\ tsukuba.seibutsu.shinkan23\@gmail.com
+      \linebreak;
+    }
+  >
+  +section{その他のSNS} <
+    +p {
+      生物学類新歓では他にもInstagramとTwitterも運営しており、新歓イベントについての連絡や生活に役立つ情報を発信しております。是非フォローしてみてください。SNSアカウントではDMも対応しておりますので、ご質問等ございましたらお気軽にご連絡ください。
+      \linebreak;
+    }
+    +fig-center(vconcat ?:align-left[
+      textbox-with-width 200pt {Instagramアカウント:biol_shinkan2023};
+      textbox-with-width 200pt {Twitterアカウント:\@biol2023 \linebreak;}
+    ]);
+  >
   +bunseki { 服部 瑛心 }
 >
