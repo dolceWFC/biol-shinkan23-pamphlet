@@ -22,15 +22,15 @@ document (|
       \linebreak;
     }
     +fig-center(vconcat ?:align-center[
-      include-image 100pt `lineqr.jpg`;
-      textbox-with-width 100pt {参加コード:tsukuba \linebreak;};
+      include-image 115pt `lineqr.jpg`;
+      textbox-with-width 110pt {参加コード:\ \emph{tsukuba} \linebreak;};
     ]);
     +p {
       このLINEオープンチャットは全員必ず参加してください！！LINEアカウントを持っていないという方はメールで個別に対応いたしますので、お手数ですが下記新歓用メールアドレスまでご連絡ください。
       \linebreak;
     }
     +p {
-      2023年度新歓用メールアドレス:\ tsukuba.seibutsu.shinkan23\@gmail.com
+      2023年度新歓用メールアドレス:\ \emph{tsukuba.seibutsu.shinkan23\@gmail.com}
       \linebreak;
     }
   >
@@ -40,8 +40,8 @@ document (|
       \linebreak;
     }
     +fig-center(vconcat ?:align-left[
-      textbox-with-width 200pt {Instagramアカウント:biol_shinkan2023};
-      textbox-with-width 200pt {Twitterアカウント:\@biol2023 \linebreak;}
+      textbox-with-width 200pt {Instagramアカウント:\ \emph{biol_shinkan2023}};
+      textbox-with-width 200pt {Twitterアカウント:\ \emph{\@biol2023 \linebreak;}}
     ]);
   >
   +bunseki { 服部 瑛心 }
