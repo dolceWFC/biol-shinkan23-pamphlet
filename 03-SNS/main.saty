@@ -1,0 +1,23 @@
+@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/class-biol-shinkan23-pamphlet
+@require: fss/fss
+@require: fss/style
+@require: enumitem/enumitem
+@require: easytable/easytable
+@require: latexcmds/latexcmds
+@require: figbox/figbox
+
+open EasyTableAlias
+open FigBox
+open EnumitemAlias
+
+in
+document (|
+  title = {1年の流れ};
+  num-chapter = 4;
+  start-page = 4;
+|) '<
+  +p {
+    めちゃめちゃ楽しいイベント！苦しい苦しいテスト期間など、記憶を頼りに1年間の流れを紹介したいと思います！筑波大生の生活は6モジュール制の学期が変わるたびにガラッと変わる印象があるので、それぞれのモジュールに沿って紹介していきまーす。
+  }
+  +bunseki { 服部 瑛心 }
+>
