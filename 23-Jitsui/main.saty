@@ -1,0 +1,38 @@
+@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/class-biol-shinkan23-pamphlet
+@require: fss/fss
+@require: fss/style
+@require: itemize
+@require: easytable/easytable
+@require: latexcmds/latexcmds
+@require: figbox/figbox
+
+open EasyTableAlias
+open FigBox
+
+in
+document (|
+  title = {学園祭実行委員会};
+  num-chapter = 22;
+  start-page = 22;
+|) '<
+  +section{学実委とは}<
+    +section{雙峰祭について} <
+      +p {
+        筑波大学の学園祭は毎年11月ごろに行われ、別名を\emph{雙峰祭}と言います。\linebreak;
+        雙峰祭では、サークルや有志団体による出し物\footnote{今年度は、昨年までコロナ禍のため禁止されていた屋外での調理企画が復活する予定です}やステージ企画を楽しむことができます。自分が出し物をする側になるのもよし、楽しむ側になるのもよし、そして\emph{運営する側}になるのも自由です！
+      }
+      +section{学園祭実行委員会について} <
+        +p {
+          雙峰祭を\emph{運営する側}に該当するのが学園祭実行委員会、略称で\emph{学実委}と呼ばれる組織です。学実委主催の企画運営、各団体による安全な企画実施のための監督といった当日業務のほかに、企業からの協賛を頂く交渉や企画団体への物品貸し出しなど幅広い業務を行っています。\linebreak;
+          合計300名ほどが在籍する巨大な組織で、その内部は複数の\emph{局}と呼ばれる組織単位から成り立っています。
+        }
+        +subsection{組織構成} <
+          +p {
+            学実委には、業務の分野ごとに
+          }
+        >
+      >
+    >
+  >
+  +bunseki { 吉本賢一郎 }
+>
