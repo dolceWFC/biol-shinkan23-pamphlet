@@ -126,7 +126,7 @@ document (|
         \linebreak;
       }
     >
-    +subsection{} <
+    +subsection{初めてのペットは細胞} <
       +itemize(nofmt)<
         +area{ケミカルバイオロジー}
         +name{石川\ 夏帆}
