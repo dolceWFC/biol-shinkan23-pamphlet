@@ -1,0 +1,31 @@
+@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/class-biol-shinkan23-pamphlet
+@require: fss/fss
+@require: fss/style
+@require: enumitem/enumitem
+@require: easytable/easytable
+@require: latexcmds/latexcmds
+@require: figbox/figbox
+
+open EasyTableAlias
+open FigBox
+open EnumitemAlias
+
+in
+document (|
+  title = {スポーツ・デー};
+  num-chapter = 20;
+  start-page = 20;
+|) '<
+  +section{スポーツ・デーとは何か} <
+    +p {
+      5月及び11月と年の二度開催される大規模な体育祭系イベント、それがスポーツ・デー\footnote{通称スポデー}である。スポーツ・デーは2日間に渡る大規模なもので、参加者も学類生から教職員と幅広い。更にスポーツ・デーで実施される競技には\emph{正式競技}と\emph{学生委員会企画}の2つがある。正式競技はソフトテニスやソフトボールなど、加えて近年はeスポーツも競技として採択された。総じて、\emph{競技としてルールが確立されている}ようなものが多く、その道の熟練した競技者、俗に言うガチ勢の参加も見られる。一方で学生委員会企画はフリースローやストラックアウトなど、より\emph{オリエンテーリングとしての側面}が強い。中にはサバゲーという変わり種もあり、バライティも豊か。なお、先のeスポーツの例もあるが、開催されるごとに競技は多少変化があることは注意したい。
+    }
+  >
+  +section{スポデーの運営} <
+    +p {
+      さて、スポーツ・デーも筑波大学の行事の例に漏れず、学生委員会\footnote{要するに学生組織のこと。やどさい、雙峰祭なども学生組織が運営する}によって運営が行われている。具体的な業務は多岐に渡るが、ここでは1年生が携わる業務について説明する。まず、先述の正式競技と学生委員会企画の運営である。当日は多数の参加者が見込まれるため、\emph{備品の設置や運営}にも人員が必要となる。幸いにも、運動神経の有無は問われないので、気にせず参加\footnote{学類新歓の際、スポデー委員他学生委員会への参加募集のタイミングがある}していただけると幸いである。もう一つ、\emph{当日の写真撮影}などを担う広報もある。スポーツ・デーの公式ホームページ\footnote{\url(`https://www.spoday.info/`);}は脚注から。興味がある方は事前にチェックしてみると良いだろう。
+      \linebreak;
+    }
+  >
+  +bunseki { 中村 好文 }
+>
