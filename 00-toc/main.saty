@@ -37,6 +37,9 @@ document (|
     }
   }
   +vspace(30pt);
+  +chapter-and-page {\font-style[bold]{学類長挨拶}}
+                    {\font-style[bold]{4}}
+  +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter0 新歓委員長挨拶}}
                     {\font-style[bold]{5}}
   +vspace(20pt);
