@@ -1,0 +1,30 @@
+@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/class-biol-shinkan23-pamphlet
+@require: fss/fss
+@require: fss/style
+@require: enumitem/enumitem
+@require: easytable/easytable
+@require: latexcmds/latexcmds
+@require: figbox/figbox
+
+open EasyTableAlias
+open FigBox
+open EnumitemAlias
+
+in
+document (|
+  title = {全代会};
+  num-chapter = 21;
+  start-page = 61;
+|) '<
+  +section{全代会とは何か} <
+    +p {
+      全代会は\emph{全学学類・専門学群・総合学域群代表者会議}と呼ばれる組織の略称\footnote{さらに省略してz会と呼ぶこともある}です。中身としては、大学生版生徒会のようなものです。もし大学の仕組みをよく知りたい！学生自治に関わりたい！色々な人脈を作りたい！とか思っているのなら、構成委員になってみてはいかがでしょうか？\emph{大学と深く関わる良い機会にもなる}ので、興味がある方は是非。活動の概要は別紙(全代会のチラシ)に記載されています。
+    }
+  >
+  +section{生物学類からの選出} <
+    +p {
+      全代会はその名の通り、各学類からの代表から構成されています。我々生物学類からは通年クラス代表\footnote{学類新歓の際に決めるクラスの代表。ちなみに仕事はない}の中から２年生が一人、１年生を二人選出します。詳細は学類新歓にて説明します。
+    }
+  >
+  +bunseki { 青木 喜大 }
+>
