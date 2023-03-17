@@ -14,7 +14,7 @@ in
 document (|
   title = {全代会};
   num-chapter = 21;
-  start-page = 21;
+  start-page = 61;
 |) '<
   +section{全代会とは何か} <
     +p {
