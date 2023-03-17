@@ -1,4 +1,4 @@
-@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/class-biol-shinkan23-pamphlet
+@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/toc
 @require: fss/fss
 @require: fss/style
 @require: itemize
