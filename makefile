@@ -9,16 +9,12 @@ BOOKLET_SOURCE_SATYSFI_AUX := $(shell find . -name '*.saty' | sed s/.saty/.satys
 .PHONY: build
 build: $(BOOKLET).pdf
 
-#booklet全体をソースpdfから作るよ
 $(BOOKLET).pdf: $(BOOKLET_SOURCE_PDF)
-#全体生成
-	pdfunite  $^ gakubunkin.pdf biol-shinkan23-pamphlet.pdf
+	pdfunite $^ gakubunkin.pdf biol-shinkan23-pamphlet.pdf
 
-#各satyからpdfを生成します(略記？)
 %.pdf: %.saty
 	satysfi $^
 
-#ダミーコマンド設定
 .PHONY: ci
 ci:
 	satysfi --type-check-only $(BOOKLET_SOURCE_SATYSFI)
