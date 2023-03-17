@@ -11,8 +11,8 @@ build: $(BOOKLET).pdf
 
 #booklet全体をソースpdfから作るよ
 $(BOOKLET).pdf: $(BOOKLET_SOURCE_PDF)
-#表紙生成
-	pdfunite  $^ biol-shinkan23-pamphlet.pdf
+#全体生成
+	pdfunite  $^ gakubunkin.pdf biol-shinkan23-pamphlet.pdf
 
 #各satyからpdfを生成します(略記？)
 %.pdf: %.saty
