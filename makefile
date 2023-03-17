@@ -1,4 +1,4 @@
-PACKAGES := satysfi-fss
+PACKAGES := satysfi-fss enumitem figbox easytable latexcmds
 
 #pamphletのpdf生成のための変数を指定
 BOOKLET := biol-shinkan23-pamphlet
@@ -29,6 +29,7 @@ setup:
 	opam install $(PACKAGES)
 	eval $(opam env)
 	satyrographos install
+	satyrographos install --system-font-prefix 'system:'
 
 .PHONY: clean
 clean:
