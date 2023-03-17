@@ -13,7 +13,7 @@ open EnumitemAlias
 in
 document (|
   title = {自炊};
-  num-chapter = 10;
+  num-chapter = 11;
   start-page = 26;
 |) '<
   +section{はじめに} <
