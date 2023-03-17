@@ -14,7 +14,7 @@ in
 document (|
   title = {アルバイト};
   num-chapter = 12;
-  start-page = 12;
+  start-page = 35;
 |) '<
   +section{はじめに} <
     +p {
