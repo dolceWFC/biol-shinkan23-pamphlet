@@ -14,7 +14,7 @@ in
 document (|
   title = {学内の図書館};
   num-chapter = 15;
-  start-page = 15;
+  start-page = 42;
 |) '<
   +section{はじめに} <
     +p {
