@@ -1,46 +1,201 @@
-@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/class-biol-shinkan23-pamphlet
+@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/toc
 @require: fss/fss
 @require: fss/style
-@require: itemize
+@require: enumitem/enumitem
 @require: easytable/easytable
 @require: latexcmds/latexcmds
 @require: figbox/figbox
 
+open EnumitemAlias
 open EasyTableAlias
-
+let-inline ctx \font-size size it =
+  let ctx = ctx |> set-font-size size in
+    read-inline ctx it
+let-inline ctx \white it =
+  let ctx = ctx |> set-text-color Color.white in
+    read-inline ctx it
+let-block ctx +pn inner =
+  let ib-inner = read-inline ctx inner in
+    form-paragraph ctx (ib-inner ++ inline-fil)
+let-block ctx +center inner =
+  let ib-inner = read-inline ctx inner in
+    form-paragraph ctx (inline-fil ++ ib-inner ++ inline-fil)
+let-block ctx +chapter-and-page inner page =
+  let ib-inner = read-inline ctx inner in
+  let ib-page = read-inline ctx page in
+    form-paragraph ctx (ib-inner ++ inline-fil ++ ib-page)
+let-block ctx +vspace len = block-skip len
 in
 document (|
-  title = {新歓委員長挨拶};
-  num-chapter = 0;
-  start-page = 4;
+  title = {目次};
+  start-page = 1;
+  is-roman-style-page-num = true;
 |) '<
-  +p {
-    \linebreak;
+  +center {
+    \font-size (15pt) {
+      \font-size(22pt){T}ABLE OF \font-size(22pt){C}ONTENTS
+    }
   }
-  +p {
-    新歓委員長という職に就いて以来、新歓の存在意義について考え続けてきた。この記事を
-    読んでいる新入生諸君は、高い志をもち懸命に勉強を重ね大学入試を突破し、今これか
-    らの大学生活に期待をされていることだろう。そんな君たちにとって学類2年生は、頼もしい先輩として輝いて見えるのかもしれない。
-    \linebreak;
-  }
-  +p {
-    しかしそれは錯覚であると言わざるを得ない。はっきり言って、別に大学生の大部分は何かしら問題がある。ある者は必修科目を落単し、ある者は時間を守れず、ある者は人間関係で揉め事を起こす。もちろん、完璧な人間など世の中にそうはいない。しかし、新歓という場では、大学生はさも完璧で頼れる先輩を演じる。今年の新歓委員の中には、必修を落単している者もいる。去年の新歓委員にもきっと必修を落単したものはいただろう。しかし、にもかかわらず昨年度の全ての新歓委員はそのような事実を隠蔽し、尊敬されようと見栄をはって履修相談に乗っていた。そのような演じられた新歓に何か意味はあるのか？どんなに恥や欠点があっても、それを包み隠さず後輩と接するのが、あるべき姿じゃないのか？私が新歓委員長を務めるからには、そのような新歓委員を無くすつもりだ。必修を落単した事実が認められる者には首から「私は~~概論を落としました。」と書かれたカードをぶら下げさせることを約束しよう。理想の先輩による着飾られた新歓ではなく、等身大のあるがままの大学生による透明度の高い新歓を実行する。
-    \linebreak;
-  }
-  +p{
-    少しは、大学の話をしよう。生物学類は、自由度が高いのが売りだ。履修に厳しすぎる制約はなく、研究活動に対しても寛容だ。1年生の頃から高学年向けの授業をとるもできるし、他学類の授業も取ることもできる。研究室もほとんどの場合、希望するところに行くことができる。その自由さを先生方は誇りを持って新歓の際に紹介するだろう。だが、自由とは「自分とは何者であるか」を見つけ出した学生にとっては素晴らしいが、そうでない学生には地獄だ。大学を卒業すること自体は簡単だ。だが、漫然と過ごしていると何にもなれずに卒業し人生を棒に降ることになる。自分が何者なのか、自分が人生で何を成すのか、そのようなことを頭のどこかで考えて大学生活を送るべきだと思う。有象無象になりたくないのなら。
-    \linebreak;
-  }
-  +p{
-    少し、手厳しいことを書いてしまった気がする。私は別に楽しい大学生活を送るなと言っ
-    てはいない。サークル活動に熱心になるのも楽しいし、友達の家でパーティーだのゲームだ
-    のするのも楽しい。私は大学生活が今のところ人生で一番楽しい時期である。
-    みなさんはどのように高校まで過ごされてきただろうか。人によってそれぞれだが、結局
-    のところさまざまな制約に縛られていた部分が多いのではないだろうか。脊椎動物の咽頭
-    胚期と同じである。そんなファイロティピック段階を超えたことは、人生が始まったと同義
-    である。ここまでは、人生のチュートリアルだったのだ。人生のチュートリアルは長すぎる
-    から、早急にアップデートした方がいい。新入生のみなさんが、自らの人生を自らの選択で
-    楽しく歩まれることを願っております。
-  }
-  +bunseki { 吉本賢一郎 }
+  +vspace(20pt);
+  +chapter-and-page {目次} {i}
+  +vspace(5pt);
+  +chapter-and-page {\font-size (12pt) {\font-style[bold]{第I部 連絡事項}}}
+                    {\font-size (12pt) {\font-style[bold]{1}}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第1章 連絡事項・今後の予定}}
+                    {\font-style[bold]{2}}
+  +vspace(1pt);
+  +chapter-and-page {　1.1　イベント実施について} {2}
+  +chapter-and-page {　1.2　入学後の流れについて} {2}
+  +chapter-and-page {　1.3　新歓Webサイトについて} {2}
+  +chapter-and-page {　1.4　SNSによる告知について} {2}
+  +chapter-and-page {　1.5　学生分担金集金のお知らせ} {3}
+  +vspace(10pt);
+  +chapter-and-page {\font-size (12pt) {\font-style[bold]{第II部 授業・履修}}}
+                    {\font-size (12pt) {\font-style[bold]{4}}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第2章 授業紹介}}
+                    {\font-style[bold]{5}}
+  +vspace(1pt);
+  +chapter-and-page {　2.1　授業について} {5}
+  +chapter-and-page {　2.2　主な必修科目} {5}
+  +chapter-and-page {　2.3　主な選択科目} {6}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Column2.1: 生成系AIの注意}}
+                    {\font-style[bold]{7}}
+  +vspace(10pt);
+  +chapter-and-page {\font-style[bold]{第3章 履修について}}
+                    {\font-style[bold]{8}}
+  +vspace(1pt);
+  +chapter-and-page {　3.1　単位} {8}
+  +chapter-and-page {　3.2　履修登録} {9}
+  +chapter-and-page {　3.3　履修登録の流れ} {9}
+  +chapter-and-page {　3.4　履修登録のためのサービス} {12}
+  +chapter-and-page {　3.5　先輩が落とした単位} {13}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Column3.1: 先輩5の反省}}
+                    {\font-style[bold]{14}}
+  +vspace(10pt);
+  +chapter-and-page {\font-size (12pt) {\font-style[bold]{第III部 学生生活}}}
+                    {\font-size (12pt) {\font-style[bold]{16}}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第4章 サークル活動}}
+                    {\font-style[bold]{17}}
+  +vspace(1pt);
+  +chapter-and-page {　4.1　サークルの種類って？} {17}
+  +chapter-and-page {　4.2　どうやってサークルを見つけるの？} {17}
+  +chapter-and-page {　4.3　サークルに入ろう！} {17}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Column4.1: 入学すると使えるもの}}
+                    {\font-style[bold]{17}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第5章 宿舎について}}
+                    {\font-style[bold]{19}}
+  +vspace(1pt);
+  +chapter-and-page {　5.1　特徴} {19}
+  +chapter-and-page {　5.2　入居の流れ} {19}
+  +chapter-and-page {　5.3　お金について} {19}
+  +chapter-and-page {　5.4　宿舎内の環境} {20}
+  +chapter-and-page {　5.5　宿舎外の環境} {21}
+  +chapter-and-page {　5.6　必要になるもの} {22}
+  +chapter-and-page {　5.7　引越しについて} {23}
+  +chapter-and-page {　5.8　2年次以降の入居希望について} {23}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第6章 アパートについて}}
+                    {\font-style[bold]{24}}
+  +vspace(1pt);
+  +chapter-and-page {　6.1　アパート生活の実態} {24}
+  +chapter-and-page {　6.2　物件選びの心得} {24}
+  +chapter-and-page {　6.3　それぞれの地域の長所、短所} {24}
+  +chapter-and-page {　6.4　最後に} {24}
+  +vspace(5pt);
+  +p{}
+  +vspace(40pt);
+  +chapter-and-page {\font-style[bold]{Column6.1: 自炊をしよう！}}
+                    {\font-style[bold]{25}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第7章 自宅通学について}}
+                    {\font-style[bold]{26}}
+  +vspace(1pt);
+  +chapter-and-page {　7.1　メリット} {26}
+  +chapter-and-page {　7.2　デメリット} {26}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第8章 学内循環バス}}
+                    {\font-style[bold]{28}}
+  +vspace(1pt);
+  +chapter-and-page {　8.1　循環バスとは} {28}
+  +chapter-and-page {　8.2　定期券について} {28}
+  +chapter-and-page {　8.3　学内循環バスの利便性} {28}
+  +vspace(10pt);
+  +chapter-and-page {\font-size (12pt) {\font-style[bold]{第IV部 学生組織}}}
+                    {\font-size (12pt) {\font-style[bold]{29}}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第9章 学生組織}}
+                    {\font-style[bold]{30}}
+  +vspace(1pt);
+  +chapter-and-page {　9.1　情報科学類クラス代表者会議} {30}
+  +chapter-and-page {　9.2　全代会} {31}
+  +chapter-and-page {　9.3　宿舎祭実行委員会} {32}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Column9.1: 学生組織への誘い}}
+                    {\font-style[bold]{33}}
+  +vspace(10pt);
+  +chapter-and-page {\font-size (12pt) {\font-style[bold]{第V部 大学の施設や名称}}}
+                    {\font-size (12pt) {\font-style[bold]{34}}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第10章 施設紹介}}
+                    {\font-style[bold]{35}}
+  +vspace(1pt);
+  +chapter-and-page {　10.1　図書館} {35}
+  +chapter-and-page {　10.2　体育館} {35}
+  +chapter-and-page {　10.3　サテライト室} {36}
+  +chapter-and-page {　10.4　講義棟・教室棟} {36}
+  +chapter-and-page {　10.5　食堂} {37}
+  +chapter-and-page {　10.6　書籍部} {38}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Column10.1: ラウンジぐらし！}}
+                    {\font-style[bold]{38}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第11章 略称・呼称}}
+                    {\font-style[bold]{45}}
+  +vspace(1pt);
+  +chapter-and-page {　11.1　教室名} {45}
+  +chapter-and-page {　11.2　学群・学類名} {45}
+  +vspace(10pt);
+  +chapter-and-page {\font-size (12pt) {\font-style[bold]{第VI部 つくばの地域やお店}}}
+                    {\font-size (12pt) {\font-style[bold]{47}}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第12章 地区紹介}}
+                    {\font-style[bold]{48}}
+  +vspace(1pt);
+  +chapter-and-page {　12.1　天久保} {48}
+  +chapter-and-page {　12.2　春日} {48}
+  +chapter-and-page {　12.3　桜} {49}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{第13章 お店紹介}}
+                    {\font-style[bold]{50}}
+  +vspace(1pt);
+  +chapter-and-page {　13.1　スーパー・ショッピングモール} {51}
+  +chapter-and-page {　13.2　コンビニ} {51}
+  +chapter-and-page {　13.3　飲食店} {52}
+  +chapter-and-page {　13.4　カフェなど} {53}
+  +chapter-and-page {　13.5　ホームセンター} {54}
+  +chapter-and-page {　13.6　自転車・自動車関係} {54}
+  +chapter-and-page {　13.7　ATM} {54}
+  +chapter-and-page {　13.8　病院・公共サービス} {54}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Column13.1: 表紙について}}
+                    {\font-style[bold]{55}}
+  +vspace(10pt);
+  +chapter-and-page {\font-size (12pt) {\font-style[bold]{第VII部 付録}}}
+                    {\font-size (12pt) {\font-style[bold]{58}}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{筑波大学用語辞典}}
+                    {\font-style[bold]{59}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{新歓ブックレット編集委員紹介}}
+                    {\font-style[bold]{63}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{おわりに}}
+                    {\font-style[bold]{65}}
 >
