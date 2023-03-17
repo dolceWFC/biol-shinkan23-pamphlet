@@ -1,4 +1,4 @@
-PACKAGES := satysfi-fss enumitem figbox easytable latexcmds
+PACKAGES := satysfi-fss satysfi-enumitem satysfi-figbox satysfi-easytable satysfi-latexcmds
 
 #pamphletのpdf生成のための変数を指定
 BOOKLET := biol-shinkan23-pamphlet
