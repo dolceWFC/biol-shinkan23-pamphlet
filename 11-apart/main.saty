@@ -19,7 +19,7 @@ let-block +choose it = '< +item?:(text-label{選んだ基準:\ }){#it;\linebreak
 in
 document (|
   title = {アパート選びと生活};
-  num-chapter = 9;
+  num-chapter = 10;
   start-page = 22;
 |) '<
   +section{はじめに} <
