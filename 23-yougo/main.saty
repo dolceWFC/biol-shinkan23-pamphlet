@@ -13,7 +13,7 @@ in
 document (|
   title = {生物学類用語集};
   num-chapter = 23;
-  start-page = 23;
+  start-page = 65;
 |) '<
   +section{はじめに} <
     +p {
