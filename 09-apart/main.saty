@@ -20,7 +20,7 @@ in
 document (|
   title = {アパート選びと生活};
   num-chapter = 9;
-  start-page = 9;
+  start-page = 22;
 |) '<
   +section{はじめに} <
     +p {
