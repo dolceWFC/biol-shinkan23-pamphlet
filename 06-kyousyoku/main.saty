@@ -21,7 +21,7 @@ in
 document (|
   title = {教職について};
   num-chapter = 6;
-  start-page = 6;
+  start-page = 16;
 |) '<
   +section{はじめに} <
     +p {
