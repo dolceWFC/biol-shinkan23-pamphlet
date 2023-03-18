@@ -13,7 +13,7 @@ in
 document (|
   title = {学園祭実行委員会};
   num-chapter = 22;
-  start-page = 62;
+  start-page = 63;
 |) '<
   +section{雙峰祭について} <
     +p {
