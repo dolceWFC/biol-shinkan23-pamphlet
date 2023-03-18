@@ -14,7 +14,7 @@ in
 document (|
   title = {スポーツ・デー};
   num-chapter = 20;
-  start-page = 60;
+  start-page = 61;
 |) '<
   +section{スポーツ・デーとは何か} <
     +p {
