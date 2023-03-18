@@ -10,7 +10,7 @@ BOOKLET_SOURCE_SATYSFI_AUX := $(shell find . -name '*.saty' | sed s/.saty/.satys
 build: $(BOOKLET).pdf
 
 $(BOOKLET).pdf: $(BOOKLET_SOURCE_PDF)
-	pdfunite $^ gakubunkin.pdf biol-shinkan23-pamphlet.pdf
+	pdfunite cover/hyoushi-1.pdf cover/hyoushi2.pdf $^ gakubunkin.pdf cover/hyoushi3.pdf cover/hyoushi-2.pdf biol-shinkan23-pamphlet.pdf
 
 %.pdf: %.saty
 	satysfi $^
