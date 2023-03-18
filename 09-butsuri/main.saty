@@ -14,7 +14,7 @@ in
 document (|
   title = {かつて物理選択だった君たちへ};
   num-chapter = 8;
-  start-page = 18;
+  start-page = 26;
 |) '<
   +section{はじめに} <
     +p {
