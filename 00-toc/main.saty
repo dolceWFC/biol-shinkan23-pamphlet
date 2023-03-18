@@ -59,56 +59,56 @@ document (|
                     {\font-style[bold]{14}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter6 学類生の研究活動}}
-                    {\font-style[bold]{55}}
-  +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter7 教職について}}
                     {\font-style[bold]{17}}
   +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter8 かつて物理選択だった君たちへ}}
-                    {\font-style[bold]{20}}
-  +vspace(20pt);
-  +chapter-and-page {\font-style[bold]{Chapter9 学生宿舎での生活}}
-                    {\font-style[bold]{21}}
-  +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter10 アパート選びと生活}}
+  +chapter-and-page {\font-style[bold]{Chapter7 教職について}}
                     {\font-style[bold]{24}}
   +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter11 自炊}}
+  +chapter-and-page {\font-style[bold]{Chapter8 かつて物理選択だった君たちへ}}
+                    {\font-style[bold]{27}}
+  +vspace(20pt);
+  +chapter-and-page {\font-style[bold]{Chapter9 学生宿舎での生活}}
                     {\font-style[bold]{28}}
   +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter10 アパート選びと生活}}
+                    {\font-style[bold]{31}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter11 自炊}}
+                    {\font-style[bold]{35}}
+  +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter12 宅通}}
-                    {\font-style[bold]{32}}
+                    {\font-style[bold]{39}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter13 アルバイト}}
-                    {\font-style[bold]{37}}
+                    {\font-style[bold]{44}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter14 運転免許}}
-                    {\font-style[bold]{40}}
+                    {\font-style[bold]{46}}
   +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter15 学内のお店紹介}}
-                    {\font-style[bold]{42}}
+                    {\font-style[bold]{48}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter16 学内の図書館}}
-                    {\font-style[bold]{45}}
+                    {\font-style[bold]{51}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter17 学類紹介}}
-                    {\font-style[bold]{47}}
+                    {\font-style[bold]{53}}
   +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter18 つくばごはん}}
-                    {\font-style[bold]{49}}
+                    {\font-style[bold]{55}}
   +vspace(200pt);
   +chapter-and-page {\font-style[bold]{Chapter19 やどかり祭}}
-                    {\font-style[bold]{62}}
+                    {\font-style[bold]{61}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter20 スポーツ・デー}}
-                    {\font-style[bold]{63}}
+                    {\font-style[bold]{62}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter21 全代会}}
-                    {\font-style[bold]{64}}
+                    {\font-style[bold]{63}}
   +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter22 全代会}}
-                    {\font-style[bold]{65}}
+  +chapter-and-page {\font-style[bold]{Chapter22 学園祭実行委員会}}
+                    {\font-style[bold]{64}}
   +vspace(20pt);
   +chapter-and-page {\font-style[bold]{生物学類用語集}}
-                    {\font-style[bold]{68}}
+                    {\font-style[bold]{67}}
 >
