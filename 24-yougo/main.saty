@@ -1,4 +1,4 @@
-@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/class-biol-shinkan23-pamphlet
+@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/dic
 @require: fss/fss
 @require: fss/style
 @require: itemize
@@ -8,19 +8,107 @@
 
 open EasyTableAlias
 open FigBox
-
+let-inline ctx \font-size size it =
+  let ctx = ctx |> set-font-size size in
+    read-inline ctx it
+let-inline ctx \white it =
+  let ctx = ctx |> set-text-color Color.white in
+    read-inline ctx it
+let-block ctx +pn inner =
+  let ib-inner = read-inline ctx inner in
+    form-paragraph ctx (ib-inner ++ inline-fil)
+let-block ctx +center inner =
+  let ib-inner = read-inline ctx inner in
+    form-paragraph ctx (inline-fil ++ ib-inner ++ inline-fil)
+let-block ctx +chapter-and-page inner page =
+  let ib-inner = read-inline ctx inner in
+  let ib-page = read-inline ctx page in
+    form-paragraph ctx (ib-inner ++ inline-fil ++ ib-page)
+let-block ctx +vspace len = block-skip len
 in
 document (|
-  title = {生物学類用語集};
-  num-chapter = 23;
-  start-page = 66;
+  title = {目次};
+  start-page = 3;
+  is-roman-style-page-num = false;
 |) '<
-  +section{はじめに} <
-    +p {
-      とにかく人類というものは、コミュニティ内でしか通用しない記号を使いがちです。日本語も大きくいえばそうだし、方言はあるし、その延長には業界内でしか通じない専門用語やもちろん大学内でしか通じないローカルな日本語があります。この項目では、大学生活でみなさんが出会うであろう初見では意味不明な単語の意味を一覧にしています。50音順になっているので辞書として使える...かも？
+  +p {
+    \font-size (26pt) {
+      生物学類用語集
     }
-  >
-  +section{あ行} <
-  >
-  +bunseki { 島村 啓生 }
+  }
+  +vspace(30pt);
+  +chapter-and-page {\font-style[bold]{学類長挨拶}}
+                    {\font-style[bold]{4}}
+  +vspace(20pt);
+  +chapter-and-page {\font-style[bold]{Chapter0 新歓委員長挨拶}}
+                    {\font-style[bold]{5}}
+  +vspace(20pt);
+  +chapter-and-page {\font-style[bold]{Chapter1 オリエンテーション案内}}
+                    {\font-style[bold]{6}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter2 宿舎入居の流れ}}
+                    {\font-style[bold]{7}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter3 各種新歓用SNSのあれこれ}}
+                    {\font-style[bold]{9}}
+  +vspace(20pt);
+  +chapter-and-page {\font-style[bold]{Chapter4 1年の流れ}}
+                    {\font-style[bold]{10}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter5 生物学類の講義}}
+                    {\font-style[bold]{14}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter6 学類生の研究活動}}
+                    {\font-style[bold]{17}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter7 教職について}}
+                    {\font-style[bold]{24}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter8 かつて物理選択だった君たちへ}}
+                    {\font-style[bold]{27}}
+  +vspace(20pt);
+  +chapter-and-page {\font-style[bold]{Chapter9 学生宿舎での生活}}
+                    {\font-style[bold]{28}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter10 アパート選びと生活}}
+                    {\font-style[bold]{31}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter11 自炊}}
+                    {\font-style[bold]{35}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter12 宅通}}
+                    {\font-style[bold]{39}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter13 アルバイト}}
+                    {\font-style[bold]{44}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter14 運転免許}}
+                    {\font-style[bold]{46}}
+  +vspace(20pt);
+  +chapter-and-page {\font-style[bold]{Chapter15 学内のお店紹介}}
+                    {\font-style[bold]{48}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter16 学内の図書館}}
+                    {\font-style[bold]{51}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter17 学類紹介}}
+                    {\font-style[bold]{53}}
+  +vspace(20pt);
+  +chapter-and-page {\font-style[bold]{Chapter18 つくばごはん}}
+                    {\font-style[bold]{55}}
+  +vspace(200pt);
+  +chapter-and-page {\font-style[bold]{Chapter19 やどかり祭}}
+                    {\font-style[bold]{61}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter20 スポーツ・デー}}
+                    {\font-style[bold]{62}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter21 全代会}}
+                    {\font-style[bold]{63}}
+  +vspace(5pt);
+  +chapter-and-page {\font-style[bold]{Chapter22 学園祭実行委員会}}
+                    {\font-style[bold]{64}}
+  +vspace(20pt);
+  +chapter-and-page {\font-style[bold]{生物学類用語集}}
+                    {\font-style[bold]{67}}
 >
