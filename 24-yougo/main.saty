@@ -1,13 +1,13 @@
-@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/dic
+@import: ../../satysfi-class-biol-shinkan23-pamphlet/src/toc
 @require: fss/fss
 @require: fss/style
-@require: itemize
+@require: enumitem/enumitem
 @require: easytable/easytable
 @require: latexcmds/latexcmds
 @require: figbox/figbox
 
+open EnumitemAlias
 open EasyTableAlias
-open FigBox
 let-inline ctx \font-size size it =
   let ctx = ctx |> set-font-size size in
     read-inline ctx it
@@ -15,30 +15,207 @@ let-inline ctx \white it =
   let ctx = ctx |> set-text-color Color.white in
     read-inline ctx it
 let-block ctx +pn inner =
+  let ctx = ctx |> set-font-size 8pt in
+  let ib-inner = read-inline ctx inner in
+    form-paragraph ctx (inline-skip(8pt) ++ ib-inner ++ inline-fil)
+let-block ctx +initial inner =
+  let ctx = ctx |> set-font-size 16pt in
   let ib-inner = read-inline ctx inner in
     form-paragraph ctx (ib-inner ++ inline-fil)
 let-block ctx +center inner =
   let ib-inner = read-inline ctx inner in
     form-paragraph ctx (inline-fil ++ ib-inner ++ inline-fil)
-let-block ctx +word inner page =
+let-block ctx +word inner =
   let ib-inner = read-inline ctx inner in
-  let ib-page = read-inline ctx page in
     form-paragraph ctx (ib-inner ++ inline-fil)
 let-block ctx +vspace len = block-skip len
 in
 document (|
-  title = {目次};
-  start-page = 3;
+  title = {生物学類用語集};
+  start-page =66;
   is-roman-style-page-num = false;
 |) '<
-  +p {
+  +center {
     \font-size (26pt) {
       生物学類用語集
     }
   }
-  +vspace(30pt);
   +vspace(20pt);
-  +word {\font-style[bold]{Chapter4 1年の流れ}}
-                    {\font-style[bold]{10}}
-  +vspace(5pt);
+  +initial {ア行}
+  +vspace(10pt);
+  +word {\font-style[bold]{ITF.}}
+  +pn {
+    IMAGINE\ THE\ FUTURE.の略。Twitter のプロフィール欄などで用いられる。ピリオドを忘れると怒られることがある。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{赤課題}}
+  +pn {
+    あかかだい。筑波大生御用達の学習管理システム、manabaの拡張機能によって赤に色付けられた課題のこと。赤くなるのは締切まで一日を切った課題なので、赤課題を量産するのはいいことではない。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{アパ民}}
+  +pn {
+    アパートを借りて通学している勢力のこと。往々にしてアパ民の家は宅通、宿舎民にとって憩いの場になる。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{天の川}}
+  +pn {
+    第二エリアと第三エリアの間を流れる川。男女比が比較的まともな第二エリアと男子校に近似される第三エリアとの差を皮肉ってこの名前で呼ばれている。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{石の広場}}
+  +pn {
+    中央図書館前にある大きめの広場。雙峰祭におけるUNITED\ STAGEをはじめイベントごとの中心になることも多い。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1限}}
+  +pn {
+    8時40分から始まる。高校生の頃は起きられたのに、気づいたら起きられなくなっている、そんな時間。
+  }
+  +vspace(10pt);+word {\font-style[bold]{一の矢学生宿舎}}
+  +pn {
+    のや、とも呼ばれる。生物学類の宿舎民はほとんどがここに住む。ICHINOYA\ IS\ NICE\ PLACE.はITF.に並ぶ筑波大のスローガンである。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{えりたん}}
+  +pn {
+    筑波大のアイドル。一般にえりたんと言うとスマホアプリを指すことが多い。詳細な学内地図やバス時刻表などが実装されていてとても便利。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{1学}}
+  +pn {
+    第一エリアの略。文系学群や総合学域群などが主に使っている。第二・第三エリアより少し南。
+  }
+  +vspace(10pt);
+  +word {\font-style[bold]{Chapter0 新歓委員長挨拶}}
 >
