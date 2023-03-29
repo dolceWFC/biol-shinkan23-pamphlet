@@ -14,7 +14,7 @@ in
 document (|
   title = {宅通};
   num-chapter = 12;
-  start-page = 38;
+  start-page = 37;
 |) '<
   +section{はじめに} <
     +p {
