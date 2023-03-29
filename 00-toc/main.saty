@@ -37,78 +37,75 @@ document (|
     }
   }
   +vspace(30pt);
-  +chapter-and-page {\font-style[bold]{学類長挨拶}}
+  +chapter-and-page {\font-style[bold]{Chapter0 新歓委員長挨拶}}
                     {\font-style[bold]{4}}
   +vspace(20pt);
-  +chapter-and-page {\font-style[bold]{Chapter0 新歓委員長挨拶}}
-                    {\font-style[bold]{5}}
-  +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter1 オリエンテーション案内}}
-                    {\font-style[bold]{6}}
+                    {\font-style[bold]{5}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter2 宿舎入居の流れ}}
-                    {\font-style[bold]{7}}
+                    {\font-style[bold]{6}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter3 各種新歓用SNSのあれこれ}}
-                    {\font-style[bold]{9}}
+                    {\font-style[bold]{8}}
   +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter4 1年の流れ}}
-                    {\font-style[bold]{10}}
+                    {\font-style[bold]{9}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter5 生物学類の講義}}
-                    {\font-style[bold]{14}}
+                    {\font-style[bold]{13}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter6 学類生の研究活動}}
-                    {\font-style[bold]{17}}
+                    {\font-style[bold]{16}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter7 教職について}}
-                    {\font-style[bold]{24}}
+                    {\font-style[bold]{23}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter8 かつて物理選択だった君たちへ}}
-                    {\font-style[bold]{27}}
+                    {\font-style[bold]{26}}
   +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter9 学生宿舎での生活}}
-                    {\font-style[bold]{28}}
+                    {\font-style[bold]{27}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter10 アパート選びと生活}}
-                    {\font-style[bold]{31}}
+                    {\font-style[bold]{30}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter11 自炊}}
-                    {\font-style[bold]{35}}
+                    {\font-style[bold]{34}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter12 宅通}}
-                    {\font-style[bold]{39}}
+                    {\font-style[bold]{40}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter13 アルバイト}}
-                    {\font-style[bold]{44}}
+                    {\font-style[bold]{43}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter14 運転免許}}
-                    {\font-style[bold]{46}}
+                    {\font-style[bold]{45}}
   +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter15 学内のお店紹介}}
-                    {\font-style[bold]{48}}
+                    {\font-style[bold]{47}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter16 学内の図書館}}
-                    {\font-style[bold]{51}}
+                    {\font-style[bold]{50}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter17 学類紹介}}
-                    {\font-style[bold]{53}}
+                    {\font-style[bold]{52}}
   +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter18 つくばごはん}}
-                    {\font-style[bold]{55}}
+                    {\font-style[bold]{54}}
   +vspace(200pt);
   +chapter-and-page {\font-style[bold]{Chapter19 やどかり祭}}
-                    {\font-style[bold]{61}}
+                    {\font-style[bold]{60}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter20 スポーツ・デー}}
-                    {\font-style[bold]{62}}
+                    {\font-style[bold]{61}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter21 全代会}}
-                    {\font-style[bold]{63}}
+                    {\font-style[bold]{62}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter22 学園祭実行委員会}}
-                    {\font-style[bold]{64}}
+                    {\font-style[bold]{63}}
   +vspace(20pt);
   +chapter-and-page {\font-style[bold]{生物学類用語集}}
-                    {\font-style[bold]{67}}
+                    {\font-style[bold]{66}}
 >
