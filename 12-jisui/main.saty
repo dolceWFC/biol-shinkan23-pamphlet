@@ -14,7 +14,7 @@ in
 document (|
   title = {自炊};
   num-chapter = 11;
-  start-page = 34;
+  start-page = 33;
 |) '<
   +section{はじめに} <
     +p {
