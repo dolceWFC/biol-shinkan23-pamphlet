@@ -14,7 +14,7 @@ in
 document (|
   title = {各種新歓用SNSのあれこれ};
   num-chapter = 3;
-  start-page = 8;
+  start-page = 7;
 |) '<
   +section{生物学類新歓LINEオープンチャットの登録} <
     +p {
