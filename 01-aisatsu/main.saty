@@ -12,7 +12,7 @@ in
 document (|
   title = {新歓委員長挨拶};
   num-chapter = 0;
-  start-page = 4;
+  start-page = 3;
 |) '<
   +p {
     \linebreak;
