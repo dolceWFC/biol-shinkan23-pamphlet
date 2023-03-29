@@ -21,7 +21,7 @@ in
 document (|
   title = {新歓オリエンテーションの流れ};
   num-chapter = 1;
-  start-page = 5;
+  start-page = 4;
 |) '<
   +section{はじめに} <
     +p {
