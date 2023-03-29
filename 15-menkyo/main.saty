@@ -14,7 +14,7 @@ in
 document (|
   title = {運転免許};
   num-chapter = 14;
-  start-page = 45;
+  start-page = 44;
 |) '<
   +section{はじめに} <
     +p {
