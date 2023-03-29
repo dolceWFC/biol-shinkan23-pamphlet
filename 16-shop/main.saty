@@ -14,7 +14,7 @@ in
 document (|
   title = {学内のお店紹介};
   num-chapter = 15;
-  start-page = 47;
+  start-page = 46;
 |) '<
   +section{はじめに} <
     +p {
