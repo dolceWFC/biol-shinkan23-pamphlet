@@ -18,7 +18,7 @@ in
 document (|
   title = {学類生の研究活動};
   num-chapter = 6;
-  start-page = 16;
+  start-page = 15;
 |) '<
   +section{はじめに} <
     +p {
