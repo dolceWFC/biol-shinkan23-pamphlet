@@ -14,7 +14,7 @@ in
 document (|
   title = {宿舎入居の流れ};
   num-chapter = 2;
-  start-page = 6;
+  start-page = 5;
 |) '<
   +section{はじめに} <
     +p {
