@@ -32,7 +32,7 @@ let-block ctx +vspace len = block-skip len
 in
 document (|
   title = {生物学類用語集};
-  start-page =66;
+  start-page =65;
   is-roman-style-page-num = false;
 |) '<
   +center {
