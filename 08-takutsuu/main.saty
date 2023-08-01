@@ -13,8 +13,8 @@ open EnumitemAlias
 in
 document (|
   title = {宅通};
-  num-chapter = 12;
-  start-page = 37;
+  num-chapter = 8;
+  start-page = 28;
 |) '<
   +section{はじめに} <
     +p {

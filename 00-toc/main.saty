@@ -37,11 +37,8 @@ document (|
     }
   }
   +vspace(30pt);
-  +chapter-and-page {\font-style[bold]{Chapter0 新歓委員長挨拶}}
-                    {\font-style[bold]{4}}
-  +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter1 1年の流れ}}
-                    {\font-style[bold]{9}}
+                    {\font-style[bold]{4}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter2 生物学類の講義}}
                     {\font-style[bold]{13}}
@@ -66,7 +63,7 @@ document (|
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter9 アルバイト}}
                     {\font-style[bold]{43}}
-  +vspace(5pt);
+  +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter10 学内のお店紹介}}
                     {\font-style[bold]{47}}
   +vspace(5pt);
@@ -75,7 +72,4 @@ document (|
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter12 つくばごはん}}
                     {\font-style[bold]{54}}
-  +vspace(200pt);
-  +chapter-and-page {\font-style[bold]{生物学類用語集}}
-                    {\font-style[bold]{66}}
 >

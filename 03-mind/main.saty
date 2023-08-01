@@ -17,8 +17,8 @@ let-block +kyouin it = '< +item?:(text-label{指導教員:\ }){#it;先生\linebr
 in
 document (|
   title = {学類生の研究活動};
-  num-chapter = 6;
-  start-page = 15;
+  num-chapter = 3;
+  start-page = 10;
 |) '<
   +section{はじめに} <
     +p {

@@ -13,8 +13,8 @@ open EnumitemAlias
 in
 document (|
   title = {かつて物理選択だった君たちへ};
-  num-chapter = 8;
-  start-page = 25;
+  num-chapter = 5;
+  start-page = 20;
 |) '<
   +section{はじめに} <
     +p {

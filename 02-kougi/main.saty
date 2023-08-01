@@ -21,7 +21,7 @@ in
 document (|
   title = {生物学類の講義};
   num-chapter = 2;
-  start-page = 12;
+  start-page = 7;
 |) '<
   +section{はじめに} <
     +p {

@@ -20,8 +20,8 @@ let-block +comment it = '< +item?:(text-label{コメント:\ }){#it;\linebreak;}
 in
 document (|
   title = {学生宿舎での生活};
-  num-chapter = 9;
-  start-page = 26;
+  num-chapter = 6;
+  start-page = 21;
 |) '<
   +section{はじめに} <
     +p {
