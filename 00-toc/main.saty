@@ -40,15 +40,6 @@ document (|
   +chapter-and-page {\font-style[bold]{Chapter0 新歓委員長挨拶}}
                     {\font-style[bold]{4}}
   +vspace(20pt);
-  +chapter-and-page {\font-style[bold]{Chapter1 オリエンテーション案内}}
-                    {\font-style[bold]{5}}
-  +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter2 宿舎入居の流れ}}
-                    {\font-style[bold]{6}}
-  +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter3 各種新歓用SNSのあれこれ}}
-                    {\font-style[bold]{8}}
-  +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter4 1年の流れ}}
                     {\font-style[bold]{9}}
   +vspace(5pt);
@@ -70,42 +61,21 @@ document (|
   +chapter-and-page {\font-style[bold]{Chapter10 アパート選びと生活}}
                     {\font-style[bold]{30}}
   +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter11 自炊}}
-                    {\font-style[bold]{34}}
-  +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter12 宅通}}
                     {\font-style[bold]{40}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter13 アルバイト}}
                     {\font-style[bold]{43}}
   +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter14 運転免許}}
-                    {\font-style[bold]{45}}
-  +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter15 学内のお店紹介}}
                     {\font-style[bold]{47}}
   +vspace(5pt);
   +chapter-and-page {\font-style[bold]{Chapter16 学内の図書館}}
                     {\font-style[bold]{50}}
   +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter17 学類紹介}}
-                    {\font-style[bold]{52}}
-  +vspace(20pt);
   +chapter-and-page {\font-style[bold]{Chapter18 つくばごはん}}
                     {\font-style[bold]{54}}
   +vspace(200pt);
-  +chapter-and-page {\font-style[bold]{Chapter19 やどかり祭}}
-                    {\font-style[bold]{60}}
-  +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter20 スポーツ・デー}}
-                    {\font-style[bold]{61}}
-  +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter21 全代会}}
-                    {\font-style[bold]{62}}
-  +vspace(5pt);
-  +chapter-and-page {\font-style[bold]{Chapter22 学園祭実行委員会}}
-                    {\font-style[bold]{63}}
-  +vspace(20pt);
   +chapter-and-page {\font-style[bold]{生物学類用語集}}
                     {\font-style[bold]{66}}
 >
